@@ -1,21 +1,41 @@
+/* Font family  */
 * {
     font-family: 'Poppins', sans-serif;
 }
 
+/* my logo at the top of the navbar */
 #mylogo {
     height: 40px;
     width: 40px;
     border-radius: 50%;
 }
 
+
+/* text gold settings start*/
 .profile_text {
     color: gold;
 }
 
+.contactMe {
+    color: gold;
+}
+.myprojectclass {
+    color: gold;
+}
+
+.toolsanimation {
+    color: gold;
+}
+/* text gold settings end */
+
+
+/* My image inside the carousel settings */
 .my-image {
     width:350px;
     height: 550px;
 }
+
+/* My background gradient color combination */
 .landingPageBackGround {
     background: linear-gradient(to top, #381930, #000000);
 }
@@ -25,48 +45,42 @@
 .toolsPageBackGround {
     background: linear-gradient(to top, #381930, #000000);
 }
-.myprojectclass {
-    color: gold;
+.contactPageBackGround {
+    background: linear-gradient(to bottom, #381930, #000000);
+}
+
+/* This is for animation tools with a 50% in bar */
+.barlen {
+    width: 50%;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-/* Start of Animation */
+/* Start of text Animation */
 .front_end_text {
     overflow: hidden; 
     border-right: .15em ; 
     white-space: nowrap; 
     animation: typing 4s steps(40) infinite; 
   }
-  
-  @keyframes typing {
-    0% {
-      width: 0; 
-    }
-    100% {
-      width: 100%; 
-    }
-  }
 
 .myprojectclass {
     overflow: hidden; 
     border-right: .15em ; 
     white-space: nowrap; 
-    animation: typing 4s steps(40) infinite; 
+    animation: type 1s steps(40) infinite; 
   }
   
-  @keyframes typing {
+.toolsanimation  {
+    overflow: hidden; 
+    border-right: .15em ; 
+    white-space: nowrap; 
+    animation: type 1s steps(40) infinite; 
+  }
+  
+@keyframes typing {
     0% {
       width: 0; 
     }
@@ -75,4 +89,33 @@
     }
   }
 
-/* End of Animation */
+.contactMe {
+    overflow: hidden; 
+    
+    white-space: nowrap; 
+    animation: type 1s steps(40) infinite; 
+  }
+  
+ @keyframes type {
+    0% {
+      width: 0; 
+    }
+    to 100% {
+      width: 100%; 
+    }
+  }
+  
+
+  .barlen {
+    animation: progressAnimation 4s linear forwards infinite;
+  }
+
+  @keyframes progressAnimation {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 50%;
+    }
+  }
+/* End of text Animation */

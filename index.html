@@ -12,11 +12,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
   <!-- CSS Link -->
   <link rel="stylesheet" href="index.css">
+  <!-- Logo link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
   
   <!-- Start of my Nav Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 	  <a class="navbar-brand" href="#landing"> <img src="images/my_logo.jpg" id="mylogo"></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -31,10 +33,10 @@
 	        <a class="nav-link" href="#projects">Projects</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Tools</a>
+	        <a class="nav-link" href="#tools">Tools</a>
 	      </li>
           <li class="nav-item">
-	        <a class="nav-link" href="#">Contact</a>
+	        <a class="nav-link" href="#contact">Contact</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -45,15 +47,15 @@
 
   <section id="landing" class="container-fluid text-light min-vh-100 p-3 p-md-5 landingPageBackGround">
     <div class="row">
-      <div class="col-lg-5 my-auto mx-auto profile_text">
+      <div class="col-lg-5 my-auto mx-auto profile_text pt-5">
         <h3>Hi, my name is</h3>
         <h1 class="text-light">Ronnel Aldrin Mariano</h1>
-        <h1 class="front_end_text">I'M A FULL STACK DEVELOPER</h1>
+        <h1 class="front_end_text">I'M A FULL STACK WEB DEVELOPER</h1>
 
         <p class="lead text-light">as a full stack developer, I bring a holistic approach to software development, combining my knowledge of front-end and back-end technologies to deliver end-to-end solutions. I am dedicated to producing high-quality code, ensuring seamless user experiences, and contributing to the success of every project I undertake.</p>
         <p class="text-light">In addition to technical expertise, I possess excellent problem-solving and analytical skills. I am detail-oriented and have a keen eye for identifying and fixing bugs and performance issues. I am constantly learning and staying up-to-date with the latest industry trends and technologies, as I believe continuous improvement is crucial in the rapidly evolving field of web development.</p>
       </div>
-      <div class="col-lg-4 mx-auto">
+      <div class="col-lg-4 mx-auto pt-5">
         <!-- Start of Carousel Profile Picture -->
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade mt-5" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -86,13 +88,14 @@
     </div>
   </section>
    <!-- End of Section with id landing -->
+
    <!-- Start of Section Projects -->
 
    <section id="projects" class="text-light min-vh-100 p-5 projectsPageBackGround">
-    <h1 class="mb-3 text-center myprojectclass">My Projects</h1>
+    <h1 class="mb-3 pt-5 text-center myprojectclass">My Projects</h1>
     <div class="p-md-5 d-lg-flex justify-content-center ">
         <!-- Project 1 Card Start -->
-        <div class="card bg-dark col-12 col-md-4 p-5 m-3">
+        <div class="card bg-dark col-12 col-md-12 col-lg-4 p-5 m-3">
           <div class="card-body">
               <img src="images/project 1.png" class="img-fluid">
             <h5 class="card-title mt-5">Project 1</h5>
@@ -106,12 +109,12 @@
         <!-- Project 1 Card End -->
 
         <!-- Project 2 Card Start -->
-        <div class="card bg-dark col-12 col-md-4 p-5 m-3">
+        <div class="card bg-dark col-12 col-md-12 col-lg-4 p-5 m-3">
             <div class="card-body">
                 <img src="./images/Screenshot_1.png" class="img-fluid">
               <h5 class="card-title mt-5">Project 2</h5>
               <h6 class="card-subtitle mb-3 text-muted">Blog Website</h6>
-              <p class="card-text pt-4">
+              <p class="card-text pt-6">
                   This website is made for informative content, expert insights, and community engagement, a "becoming a pro Dota player" blog website seeks to assist individuals in their journey towards reaching the pinnacle of Dota 2 competition. It acts as a valuable resource for players aspiring to compete at the highest level and offers guidance for improving their skills, knowledge, and overall understanding of the game.
               </p>
               
@@ -120,7 +123,7 @@
         <!-- Project 2 Card End -->
 
         <!-- Project 3 Card Start -->
-        <div class="card bg-dark col-12 col-md-4 p-5 m-3">
+        <div class="card bg-dark col-12 col-md-12 col-lg-4 p-5 m-3">
             <div class="card-body">
                 <img src="./images/project 3.1.png" class="img-fluid imgproject">
                 
@@ -138,39 +141,106 @@
 
    <!-- start of section Tools -->
    <section id="tools" class="text-light min-vh-100 p-5 toolsPageBackGround" >
-    <h1 class="text-center">Tools</h1>
+    <h1 class="text-center mt-5 toolsanimation">Tools</h1>
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 mt-3 mb-5">
+                <div id="tools-section" class="d-md-flex justify-content-center">
+                    <img src="images/logo-mongodb.png"/>
+                    <img src="images/logo-nodejs.png"/>
+                    <img src="images/logo-expressjs.png"/>
+                    <img src="images/logo-react.png"/>
+                    <img src="images/logo-heroku.png"/>
+                    
+                </div>
+                <div class="d-md-flex justify-content-center">
+                    <img src="images/logo-git.png"/>
+                    <img src="images/logo-sublime-text-3.png"/>
+                    <img src="images/logo-postman.png"/>
+                    <img src="images/logo-gitlab-ci-cd.png"/>
+                    
+                </div>
+                <div id="tools-section" class="d-md-flex justify-content-center pb-5 learned">
+                    <img src="images/logo-css3.png">
+                    <img src="images/logo-javascript.png">
+                    <img src="images/logo-html5.png" alt="">
+                    <img src="images/logo-bootstrap.png" alt="">
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated barlen" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" >50% progress</div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+<!-- End of section Tools -->
+
+<!-- Start of Contact Section -->
+
+<section id="contact">
+    <div class="container-fluid text-light p-5 text-center contactPageBackGround min-vh-100">
+        <h2 class="pt-5 pb-5 contactMe text-center">Contact Me</h2>
+        <div class="row mt-3 d-flex flex-row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-xl-4">
+                <form id="form-col" class="bg-dark p-3 rounded">
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="5" placeholder=""></textarea>
+                    </div>
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalDiv">Send Email</button>
+                </form>
                 
+                <!-- Start of the contact modal -->
+                <div class="modal fade text-dark" id="modalDiv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="modalDiv">Thank you for contacting my friend!</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          Email Sent!
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- End of the contact modal -->
             </div>
         </div>
     </div>
 
+</section>
+<!-- End of Contact Section -->
 
-
-
-
-
-
-
-
-
-
-   </section>
-
-
-
-
-
-
-
-
-
-
-   <!-- End of section Tools -->
-
-
+<!-- Start of the footer -->
+<footer class="footer  text-light">
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="">
+            <ul class="list-unstyled d-md-flex flex-md-row pt-3">
+                <li><i class="fas fa-phone-alt ml-5"></i> +639772490511</li>
+                <li><i class="fas fa-envelope  ml-5"></i>  ronnelaldrinmariano@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt  ml-5"></i> Mendez  Cavite, Philippines</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+<!-- End of the Footer -->
 
 
 
