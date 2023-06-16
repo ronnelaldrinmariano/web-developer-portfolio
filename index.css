@@ -1,0 +1,78 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+#mylogo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.profile_text {
+    color: gold;
+}
+
+.my-image {
+    width:350px;
+    height: 550px;
+}
+.landingPageBackGround {
+    background: linear-gradient(to top, #381930, #000000);
+}
+.projectsPageBackGround {
+    background: linear-gradient(to bottom, #381930, #000000);
+}
+.toolsPageBackGround {
+    background: linear-gradient(to top, #381930, #000000);
+}
+.myprojectclass {
+    color: gold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start of Animation */
+.front_end_text {
+    overflow: hidden; 
+    border-right: .15em ; 
+    white-space: nowrap; 
+    animation: typing 4s steps(40) infinite; 
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0; 
+    }
+    100% {
+      width: 100%; 
+    }
+  }
+
+.myprojectclass {
+    overflow: hidden; 
+    border-right: .15em ; 
+    white-space: nowrap; 
+    animation: typing 4s steps(40) infinite; 
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0; 
+    }
+    100% {
+      width: 100%; 
+    }
+  }
+
+/* End of Animation */
