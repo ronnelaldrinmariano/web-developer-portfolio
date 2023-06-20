@@ -33,20 +33,35 @@
 .my-image {
     width:350px;
     height: 550px;
+    border-radius: 50%;
+}
+.sectioncontact {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.sectioncontact {
+  text-align: center;
 }
 
 /* My background gradient color combination */
 .landingPageBackGround {
-    background: linear-gradient(to top, #381930, #000000);
+  background: rgb(35,25,38);
+  background: radial-gradient(circle, rgba(35,25,38,1) 27%, rgba(62,25,73,1) 59%, rgba(55,5,71,1) 73%, rgba(46,18,56,1) 93%, rgba(63,89,105,1) 100%);
 }
 .projectsPageBackGround {
-    background: linear-gradient(to bottom, #381930, #000000);
+  background: rgb(35,25,38);
+background: radial-gradient(circle, rgba(35,25,38,1) 27%, rgba(62,25,73,1) 59%, rgba(55,5,71,1) 73%, rgba(46,18,56,1) 93%, rgba(63,89,105,1) 100%);
 }
 .toolsPageBackGround {
-    background: linear-gradient(to top, #381930, #000000);
+  background: rgb(35,25,38);
+background: radial-gradient(circle, rgba(35,25,38,1) 27%, rgba(62,25,73,1) 59%, rgba(55,5,71,1) 73%, rgba(46,18,56,1) 93%, rgba(63,89,105,1) 100%);
 }
 .contactPageBackGround {
-    background: linear-gradient(to bottom, #381930, #000000);
+  background: rgb(35,25,38);
+background: radial-gradient(circle, rgba(35,25,38,1) 27%, rgba(62,25,73,1) 59%, rgba(55,5,71,1) 73%, rgba(46,18,56,1) 93%, rgba(63,89,105,1) 100%);
 }
 
 /* This is for animation tools with a 50% in bar */
@@ -54,7 +69,18 @@
     width: 50%;
 }
 
+/* Settings of progress bar */
 
+.spacing {
+  padding-bottom: 100px;
+}
+
+/* node border */
+
+.nodeborder {
+  background-color: gray;
+  border-radius: 50%;
+}
 
 
 
@@ -66,19 +92,7 @@
     animation: typing 4s steps(40) infinite; 
   }
 
-.myprojectclass {
-    overflow: hidden; 
-    border-right: .15em ; 
-    white-space: nowrap; 
-    animation: type 1s steps(40) infinite; 
-  }
-  
-.toolsanimation  {
-    overflow: hidden; 
-    border-right: .15em ; 
-    white-space: nowrap; 
-    animation: type 1s steps(40) infinite; 
-  }
+
   
 @keyframes typing {
     0% {
@@ -89,13 +103,7 @@
     }
   }
 
-.contactMe {
-    overflow: hidden; 
-    
-    white-space: nowrap; 
-    animation: type 1s steps(40) infinite; 
-  }
-  
+=  
  @keyframes type {
     0% {
       width: 0; 

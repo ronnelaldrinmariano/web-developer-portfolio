@@ -65,13 +65,13 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/me 1.1.jpg" class="d-block w-100 img-fluid rounded-circle my-image" >
+              <img src="images/me 1.1.jpg" class="d-block w-100 img-fluid my-image" >
             </div>
             <div class="carousel-item">
-              <img src="images/me 4.1.jpg" class="d-block w-100 img-fluid rounded-circle my-image" >
+              <img src="images/me 4.1.jpg" class="d-block w-100 img-fluid my-image" >
             </div>
             <div class="carousel-item">
-              <img src="images/me .1.jpg" class="d-block w-100 img-fluid rounded-circle my-image" >
+              <img src="images/me .1.jpg" class="d-block w-100 img-fluid my-image" >
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
@@ -95,12 +95,12 @@
     <h1 class="mb-3 pt-5 text-center myprojectclass">My Projects</h1>
     <div class="p-md-5 d-lg-flex justify-content-center ">
         <!-- Project 1 Card Start -->
-        <div class="card bg-secondary col-12 col-md-12 col-lg-4 p-5 m-3">
+        <div class="card bg-secondary col-12  col-lg-4 p-5 m-3">
           <div class="card-body">
               <img src="images/project 1.png" class="img-fluid">
             <h5 class="card-title mt-5">Project 1</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Article for Crazy People Website</h6>
-            <p class="card-text pt-3">
+            <h6 class="card-subtitle mb-2 text-dark">Article for Crazy People Website</h6>
+            <p class="card-text pt-4">
                 This website is a source of entertainment, inspiration, and even education for those curious about different perspectives and unconventional lives. However, it's essential to approach them with an open mind and consider the impact of the content on the individuals being portrayed.
             </p>
             
@@ -109,11 +109,11 @@
         <!-- Project 1 Card End -->
 
         <!-- Project 2 Card Start -->
-        <div class="card bg-secondary col-12 col-md-12 col-lg-4 p-5 m-3">
+        <div class="card bg-secondary col-12  col-lg-4 p-5 m-3">
             <div class="card-body">
                 <img src="./images/Screenshot_1.png" class="img-fluid">
               <h5 class="card-title mt-5">Project 2</h5>
-              <h6 class="card-subtitle mb-3 text-muted">Blog Website</h6>
+              <h6 class="card-subtitle mb-3 text-dark">Blog Website</h6>
               <p class="card-text pt-6">
                   This website is made for informative content, expert insights, and community engagement, a "becoming a pro Dota player" blog website seeks to assist individuals in their journey towards reaching the pinnacle of Dota 2 competition. It acts as a valuable resource for players aspiring to compete at the highest level and offers guidance for improving their skills, knowledge, and overall understanding of the game.
               </p>
@@ -123,12 +123,12 @@
         <!-- Project 2 Card End -->
 
         <!-- Project 3 Card Start -->
-        <div class="card bg-secondary col-12 col-md-12 col-lg-4 p-5 m-3">
+        <div class="card bg-secondary col-12   col-lg-4 p-5 m-3">
             <div class="card-body">
                 <img src="./images/project 3.1.png" class="img-fluid imgproject">
                 
               <h5 class="card-title mt-5">Project 3</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Artist/rapper Website</h6>
+              <h6 class="card-subtitle mb-2 text-dark">Artist/rapper Website</h6>
               <p class="card-text pt-3">
                   This website serves as a central online presence for musicians, allowing them to share their music, story, and art with the world. It offers fans a comprehensive platform to explore, engage, and connect with the artist's work, and provides a means for the artist to promote their brand and grow their fan base.
               </p>
@@ -145,22 +145,22 @@
     <div class="container">
         <div class="row">
             <div class="col-12 mt-3 mb-5">
-                <div id="tools-section" class="d-md-flex justify-content-center">
+                <div id="tools-section" class="d-md-flex justify-content-center spacing">
                     <img src="images/logo-mongodb.png"/>
-                    <img src="images/logo-nodejs.png"/>
+                    <img src="images/logo-nodejs.png" class="nodeborder"/>
                     <img src="images/logo-expressjs.png"/>
                     <img src="images/logo-react.png"/>
                     <img src="images/logo-heroku.png"/>
                     
                 </div>
-                <div class="d-md-flex justify-content-center">
+                <div class="d-md-flex justify-content-center spacing">
                     <img src="images/logo-git.png"/>
                     <img src="images/logo-sublime-text-3.png"/>
                     <img src="images/logo-postman.png"/>
                     <img src="images/logo-gitlab-ci-cd.png"/>
                     
                 </div>
-                <div id="tools-section" class="d-md-flex justify-content-center pb-5 learned">
+                <div id="tools-section" class="d-md-flex justify-content-center pb-5 learned spacing">
                     <img src="images/logo-css3.png">
                     <img src="images/logo-javascript.png">
                     <img src="images/logo-html5.png" alt="">
@@ -177,9 +177,9 @@
 
 <!-- Start of Contact Section -->
 
-<section id="contact">
-    <div class="container-fluid text-light p-5 text-center contactPageBackGround min-vh-100">
-        <h2 class="pt-5 pb-5 contactMe text-center">Contact Me</h2>
+<section id="contact" class="sectioncontact">
+    <div class="container-fluid text-light p-5 text-center contactPageBackGround flex-grow-1">
+        <h2 class="pb-5 contactMe text-center pt-5">Contact Me</h2>
         <div class="row mt-3 d-flex flex-row justify-content-center">
             <div class="col-sm-12 col-md-8 col-xl-4">
                 <form id="form-col" class="bg-dark p-3 rounded">
@@ -195,7 +195,7 @@
                       <label for="message">Message</label>
                       <textarea class="form-control" id="message" rows="5" placeholder=""></textarea>
                     </div>
-                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalDiv">Send Email</button>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalDiv">Send Email</button>
                 </form>
                 
                 <!-- Start of the contact modal -->
@@ -221,26 +221,27 @@
             </div>
         </div>
     </div>
-
+        <!-- Start of the footer --> 
+         <footer class="footer  text-light ">
+          <div class="container-fluid bg-dark">
+              <div class="row">
+                  <div class="col-12">
+                  <ul class="list-unstyled d-md-flex flex-md-row pt-3">
+                      <li><i class="fas fa-phone-alt ml-5"></i> +639772490511</li>
+                      <li><i class="fas fa-envelope  ml-5"></i>  ronnelaldrinmariano@gmail.com</li>
+                      <li><i class="fas fa-map-marker-alt  ml-5"></i> Mendez, Cavite</li>
+                  </ul>
+                  </div>
+              </div>
+          </div>
+        </footer>
+        <!-- End of the Footer -->
+        
 </section>
 <!-- End of Contact Section -->
 
-<!-- Start of the footer -->
-<footer class="footer  text-light">
-    <div class="container-fluid bg-dark">
-        <div class="row">
-            <div class="">
-            <ul class="list-unstyled d-md-flex flex-md-row pt-3">
-                <li><i class="fas fa-phone-alt ml-5"></i> +631234566712</li>
-                <li><i class="fas fa-envelope  ml-5"></i>  email@example.com</li>
-                <li><i class="fas fa-map-marker-alt  ml-5"></i> 123 Philippines</li>
-            </ul>
-            </div>
-        </div>
-    </div>
-  </footer>
-  
-<!-- End of the Footer -->
+
+
 
 
 
